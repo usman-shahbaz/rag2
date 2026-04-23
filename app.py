@@ -9,6 +9,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 
+# Azure OpenAI wrappers
 from langchain_azure_ai.embeddings import AzureAIEmbeddingsModel
 from langchain_azure_ai.chat_models import AzureAIChatCompletionsModel
 from langchain.schema import SystemMessage, HumanMessage
