@@ -30,6 +30,8 @@ def load_and_split_pdf(pdf_path, chunk_size=1000, chunk_overlap=200):
     return docs
 
 def build_faiss_index(docs, embed_model, index_path="faiss_index"):
+
+    # Remove existing index to avoid stale data
     if os.path.isdir(index_path):
         import shutil
         shutil.rmtree(index_path)
