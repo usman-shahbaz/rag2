@@ -54,6 +54,9 @@ def create_qa_chain(vs, chat_model, k=2):
 # ─── App Initialization ─────────────────────────────────────────────────────
 
 load_dotenv()
+
+# Read configuration values
+
 ENDPOINT    = os.getenv("AZURE_INFERENCE_ENDPOINT")
 API_KEY     = os.getenv("AZURE_INFERENCE_KEY")
 EMBED_MODEL = os.getenv("AZURE_EMBED_MODEL", "text-embedding-3-small")
