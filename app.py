@@ -17,7 +17,6 @@ from langchain.schema import SystemMessage, HumanMessage
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger("rag_app")
 
-# ─── Helper Functions ────────────────────────────────────────────────────────
 
 def load_and_split_pdf(pdf_path, chunk_size=1000, chunk_overlap=200):
     logger.info(f"Loading PDF: {pdf_path}")
