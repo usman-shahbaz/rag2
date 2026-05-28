@@ -14,7 +14,6 @@ from langchain_azure_ai.embeddings import AzureAIEmbeddingsModel
 from langchain_azure_ai.chat_models import AzureAIChatCompletionsModel
 from langchain.schema import SystemMessage, HumanMessage
 
-# ─── Logging Setup ───────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger("rag_app")
 
