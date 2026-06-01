@@ -70,8 +70,6 @@ chat_model = AzureAIChatCompletionsModel(
     model=CHAT_MODEL, temperature=TEMPERATURE
 )
 
-
-# Build index & chain ONCE
 docs       = load_and_split_pdf(PDF_PATH)
 vs         = build_faiss_index(docs, embeddings)
 qa_chain   = create_qa_chain(vs, chat_model)
