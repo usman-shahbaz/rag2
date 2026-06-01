@@ -71,8 +71,6 @@ chat_model = AzureAIChatCompletionsModel(
 )
 
 
-# ─── Build RAG Pipeline (runs once at startup) ──────────────────────────────
-
 # Build index & chain ONCE
 docs       = load_and_split_pdf(PDF_PATH)
 vs         = build_faiss_index(docs, embeddings)
